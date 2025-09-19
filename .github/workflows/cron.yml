@@ -1,0 +1,10 @@
+on:
+  schedule:
+    - cron: "0 21 * * *"
+  workflow_dispatch:
+
+jobs:
+  nightly:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Job nightly la 21:00 UTC"
